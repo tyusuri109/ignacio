@@ -1,0 +1,91 @@
+body {
+    width: 100%;
+    background-color: rgba(68, 68, 68, 0.62);
+    font-weight: 700;
+    font-family: 'Tillana', cursive;
+    text-align: center;
+    color: rgb(25, 35, 44);;
+}
+.container {
+    margin: 15% auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 7%;
+    background-color: rgb(25, 35, 44); /*body color */
+    padding: 5%;
+    box-shadow: 30px 30px 50px rgba(62, 59, 59, 0.733);
+    border: 0px;
+}
+#display {
+    
+    width: 300px;
+    margin: 15px 0px;
+    border-radius: 8%;
+    border: 0px;
+    background-color: rgb(241, 241, 241);
+    /*box-shadow: 5px 5px 10px rgba(49, 67, 79, 0.844);*/
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Tillana', cursive;
+    color: rgb(0, 0, 0);
+}
+.btn {
+    height: 60px;
+    width: 60px;
+    padding: 3%;
+    margin: 8px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Tillana', cursive;
+    color: rgb(255, 255, 255);
+    background-color: rgba(63, 65, 65, 0.542);
+    border-radius: 20%;
+    border: 0px;
+    box-shadow: -2px -2px 5px #27272784, 5px 5px 15px rgba(167, 167, 167, 0.671);
+}
+.btn:hover {
+    background-color: rgb(231, 231, 231);
+    color: rgb(0, 0, 0);
+}
+form .screen{
+    display: flex;
+    justify-content: flex-end;
+}
+form .screen input{
+    text-align: right;
+}
+#display {
+    width: 300px;
+    margin: 15px 0px;
+    border-radius: 8%;
+    border: 0px;
+    background-color: rgb(255, 255, 255); /* Initial color */
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Tillana', cursive;
+    color: rgb(0, 0, 0);
+
+}
+@keyframes colorChange {
+    0% { background-color: red; box-shadow: 5px 5px 10px rgba(49, 67, 79, 0.844); }
+    33% { background-color: blue; box-shadow: 10px 10px 15px rgba(49, 67, 79, 0.844); }
+    66% { background-color: green; box-shadow: 15px 15px 20px rgba(49, 67, 79, 0.844); }
+    100% { background-color: red; box-shadow: 5px 5px 10px rgba(49, 67, 79, 0.844); }
+}
+footer {
+    color: rgb(128, 128, 128);
+    font-weight: 700;
+    font-family: 'Tillana', cursive;
+    text-align: center;
+    animation: colorChange 5s infinite;
+}
+
+@media only screen and (min-width: 768px){
+    .container{
+        padding: 45px;
+        margin: 10% auto;
+    }
+}
